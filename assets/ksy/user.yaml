@@ -349,9 +349,6 @@ seq:
     type: u2
   - id: zombatar_license_accepted
     type: u1
-  - id: zombatar_count_duplicate
-    type: u4
-
   - id: num_zombatars
     type: u4
 
@@ -360,6 +357,10 @@ seq:
     type: zombatar
     repeat: expr
     repeat-expr: num_zombatars
+  - id: unknown_tail
+    size: 0x14
+  - id: dont_display_saved_jpeg_to_desktop_message
+    type: u1
 
 types:
   zen_plant:

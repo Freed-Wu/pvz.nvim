@@ -73,7 +73,7 @@ function M.User:get_lines()
         end
     end
     table.insert(lines, "# Achievements")
-    for _, name in ipairs { "home_lawn_security", "nobel_peas_prize", "better_off_dead", "china_shop", "spudow", "explodonator", "morticulturalist", "dont_pea_in_the_pool", "roll_some_heads", "grounded", "zombologist", "penny_pincher", "sunny_days", "popcorn_party", "good_morning", "no_fungus_among_us", "beyond_the_grave", "immortal", "towering_wisdom", "mustache_mode", "zombatar_license_accepted", "zombatar_count_duplicate" } do
+    for _, name in ipairs { "home_lawn_security", "nobel_peas_prize", "better_off_dead", "china_shop", "spudow", "explodonator", "morticulturalist", "dont_pea_in_the_pool", "roll_some_heads", "grounded", "zombologist", "penny_pincher", "sunny_days", "popcorn_party", "good_morning", "no_fungus_among_us", "beyond_the_grave", "immortal", "towering_wisdom", "mustache_mode", "zombatar_license_accepted" } do
         table.insert(lines, ("%s: %d"):format(name, self[name]))
     end
     table.insert(lines, "# Zombatars")
@@ -84,6 +84,8 @@ function M.User:get_lines()
             table.insert(lines, ("    %s: %d"):format(name, zombatar[name]))
         end
     end
+    local name = "dont_display_saved_jpeg_to_desktop_message"
+    table.insert(lines, ("%s: %d"):format(name, self[name]))
     return lines
 end
 
@@ -134,7 +136,7 @@ function M.User:set_lines(lines)
             self.zen_plants[i][name] = zen_plant[name]
         end
     end
-    for _, name in ipairs { "home_lawn_security", "nobel_peas_prize", "better_off_dead", "china_shop", "spudow", "explodonator", "morticulturalist", "dont_pea_in_the_pool", "roll_some_heads", "grounded", "zombologist", "penny_pincher", "sunny_days", "popcorn_party", "good_morning", "no_fungus_among_us", "beyond_the_grave", "immortal", "towering_wisdom", "mustache_mode", "zombatar_license_accepted", "zombatar_count_duplicate" } do
+    for _, name in ipairs { "home_lawn_security", "nobel_peas_prize", "better_off_dead", "china_shop", "spudow", "explodonator", "morticulturalist", "dont_pea_in_the_pool", "roll_some_heads", "grounded", "zombologist", "penny_pincher", "sunny_days", "popcorn_party", "good_morning", "no_fungus_among_us", "beyond_the_grave", "immortal", "towering_wisdom", "mustache_mode", "zombatar_license_accepted" } do
         self[name] = data[name]
     end
     if data.zombatars == "" then
@@ -146,6 +148,8 @@ function M.User:set_lines(lines)
             self.zombatars[i][name] = zombatar[name]
         end
     end
+    local name = "dont_display_saved_jpeg_to_desktop_message"
+    self[name] = data[name]
 end
 
 ---@param path string?
@@ -239,9 +243,6 @@ function M.User:dump(path)
         end
         local name = "zombatar_license_accepted"
         kaitai.write(f, self[name], 1)
-        local name = "zombatar_count_duplicate"
-        kaitai.write(f, self[name], 4)
-
         local name = "num_zombatars"
         kaitai.write(f, self[name], 4)
         for _, zombatar in ipairs(self.zombatars) do
@@ -251,7 +252,10 @@ function M.User:dump(path)
                 kaitai.write(f, zombatar[name], 4)
             end
         end
-        f:write(("\0"):rep(0x11))
+        local name = "unknown_tail"
+        f:write(self[name])
+        local name = "dont_display_saved_jpeg_to_desktop_message"
+        kaitai.write(f, self[name], 1)
         f:close()
     end
 end

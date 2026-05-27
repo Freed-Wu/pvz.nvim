@@ -165,12 +165,13 @@ function User:_read()
   self.towering_wisdom = self._io:read_u2le()
   self.mustache_mode = self._io:read_u2le()
   self.zombatar_license_accepted = self._io:read_u1()
-  self.zombatar_count_duplicate = self._io:read_u4le()
   self.num_zombatars = self._io:read_u4le()
   self.zombatars = {}
   for i = 0, self.num_zombatars - 1 do
     self.zombatars[i + 1] = User.Zombatar(self._io, self, self._root)
   end
+  self.unknown_tail = self._io:read_bytes(20)
+  self.dont_display_saved_jpeg_to_desktop_message = self._io:read_u1()
 end
 
 -- 
