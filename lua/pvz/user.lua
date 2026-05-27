@@ -132,6 +132,32 @@ function M.User:set_lines(lines)
     end
     self.num_zen_plants = #data.zen_plants
     for i, zen_plant in ipairs(data.zen_plants) do
+        if self.zen_plants[i] == nil then
+            self.zen_plants[i] = {
+                plant_type = 0,
+                garden_location = 0,
+                column = 0,
+                row = 0,
+                direction = 0,
+                unknown_14 = 0,
+                last_watered = 0,
+                unknown_1c = 0,
+                color = 0,
+                times_fertilized = 0,
+                times_watered = 0,
+                water_needed = 0,
+                happiness_state = 0,
+                unknown_34 = 0,
+                last_phono_bugspray = 0,
+                unknown_3c = 0,
+                last_fertilized = 0,
+                unknown_44 = 0,
+                last_chocolate = 0,
+                unknown_4c = 0,
+                unknown_50 = 0,
+                unknown_54 = 0,
+            }
+        end
         for _, name in ipairs { "plant_type", "garden_location", "column", "row", "direction", "last_watered", "color", "times_fertilized", "times_watered", "water_needed", "happiness_state", "last_phono_bugspray", "last_fertilized", "last_chocolate" } do
             self.zen_plants[i][name] = zen_plant[name]
         end
@@ -144,6 +170,28 @@ function M.User:set_lines(lines)
     end
     self.num_zombatars = #data.zombatars
     for i, zombatar in ipairs(data.zombatars) do
+        if self.zombatars[i] == nil then
+            self.zombatars[i] = {
+                unknown_00 = 0,
+                skin_color = 0,
+                clothes_type = 0,
+                clothes_color = 0,
+                tidbits_type = 0,
+                tidbits_color = 0,
+                accessories_type = 0,
+                accessories_color = 0,
+                facial_hair_type = 0,
+                facial_hair_color = 0,
+                hair_type = 0,
+                hair_color = 0,
+                eyewear_type = 0,
+                eyewear_color = 0,
+                hat_type = 0,
+                hat_color = 0,
+                backdrop_type = 0,
+                backdrop_color = 0,
+            }
+        end
         for _, name in ipairs { "skin_color", "clothes_type", "clothes_color", "tidbits_type", "tidbits_color", "accessories_type", "accessories_color", "facial_hair_type", "facial_hair_color", "hair_type", "hair_color", "eyewear_type", "eyewear_color", "hat_type", "hat_color", "backdrop_type", "backdrop_color" } do
             self.zombatars[i][name] = zombatar[name]
         end

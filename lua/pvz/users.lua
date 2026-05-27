@@ -37,6 +37,14 @@ function M.Users:set_lines(lines)
         local name = line:match('^%d+,%d+,(.*)')
         if id and timestamp and name then
             i = i + 1
+            if self.users[i] == nil then
+                self.users[i] = {
+                    id = 0,
+                    timestamp = 0,
+                    name = '',
+                    len_name = 0,
+                }
+            end
             self.users[i].id = tonumber(id)
             self.users[i].timestamp = tonumber(timestamp)
             self.users[i].name = name

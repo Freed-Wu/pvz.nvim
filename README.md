@@ -104,31 +104,7 @@ edit username or `dd` to delete user. `:w` to save.
 vi pvz://id
 ```
 
-```yaml
----
-adventure_level: 51
-money_div_10: 0
-adventure_completed_times: 0
-# Survival flags (normal)
-survival_day_flags: 0
-survival_night_flags: 0
-survival_pool_flags: 0
-survival_fog_flags: 0
-survival_roof_flags: 0
-# Survival flags (hard)
-survival_day_hard_flags: 0
-survival_night_hard_flags: 0
-survival_pool_hard_flags: 0
-survival_fog_hard_flags: 0
-survival_roof_hard_flags: 0
-# Survival endless streaks
-streak_day_endless: 0
-streak_night_endless: 0
-streak_pool_endless: 0
-streak_fog_endless: 0
-streak_roof_endless: 0
-# ...
-```
+[A reference yaml](assets/yaml/user.yaml).
 
 Refer <https://plantsvszombies.fandom.com/wiki/User_file_format>.
 

@@ -1,0 +1,935 @@
+---
+adventure_level: 51
+money_div_10: 10000
+adventure_completed_times: 2
+# Survival flags (normal)
+survival_day_flags: 5
+survival_night_flags: 5
+survival_pool_flags: 5
+survival_fog_flags: 5
+survival_roof_flags: 5
+# Survival flags (hard)
+survival_day_hard_flags: 10
+survival_night_hard_flags: 10
+survival_pool_hard_flags: 10
+survival_fog_hard_flags: 10
+survival_roof_hard_flags: 10
+# Survival endless streaks
+streak_day_endless: 0
+streak_night_endless: 0
+streak_pool_endless: 0
+streak_fog_endless: 0
+streak_roof_endless: 0
+# Minigame trophies
+trophy_zombotany: 1
+trophy_wallnut_bowling: 1
+trophy_slot_machine: 1
+trophy_raining_seeds: 1
+trophy_beghouled: 1
+trophy_invisighoul: 1
+trophy_seeing_stars: 1
+trophy_zombiquarium: 1
+trophy_beghouled_twist: 1
+trophy_big_trouble_little_zombie: 1
+trophy_portal_combat: 1
+trophy_column_like_you_see_em: 1
+trophy_bobsled_bonanza: 1
+trophy_zombie_nimble_zombie_quick: 1
+trophy_whack_a_zombie: 1
+trophy_last_stand: 1
+trophy_zombotany_2: 1
+trophy_wallnut_bowling_2: 1
+trophy_pogo_party: 1
+trophy_dr_zomboss_revenge: 1
+# Hidden Minigame trophies
+trophy_art_challenge_wallnut: 1
+trophy_sunny_day: 1
+trophy_unsodded: 1
+trophy_big_time: 1
+trophy_art_challenge_sunflower: 1
+trophy_air_raid: 1
+trophy_ice_level: 1
+trophy_zen_garden_limbo: 1
+trophy_high_gravity: 1
+trophy_grave_danger: 1
+trophy_can_you_dig_it: 1
+trophy_dark_stormy_night: 1
+trophy_bungee_blitz: 1
+trophy_squirrel: 1
+# Misc
+tree_of_wisdom_height: 0
+# Puzzle trophies
+trophy_vasebreaker: 1
+trophy_to_the_left: 1
+trophy_third_vase: 1
+trophy_chain_reaction: 1
+trophy_m_is_for_metal: 1
+trophy_scary_potter: 1
+trophy_hokey_pokey: 1
+trophy_another_chain_reaction: 1
+trophy_ace_of_vase: 1
+streak_vasebreaker_endless: 0
+# I, Zombie puzzles
+trophy_i_zombie: 1
+trophy_i_zombie_too: 1
+trophy_can_you_dig_it_puzzle: 1
+trophy_totally_nuts: 1
+trophy_dead_zeppelin: 1
+trophy_me_smash: 1
+trophy_zomboogie: 1
+trophy_three_hit_wonder: 1
+trophy_all_your_brainz_r_belong_to_us: 1
+streak_i_zombie_endless: 0
+trophy_upsell_limbo: 1
+trophy_intro_limbo: 1
+# Shop plants
+has_gatling_pea: 1
+has_twin_sunflower: 1
+has_gloom_shroom: 1
+has_cattail: 1
+has_winter_melon: 1
+has_gold_magnet: 1
+has_spikerock: 1
+has_cob_cannon: 1
+has_imitater: 1
+marigold_days_left: 0
+marigold_days_center: 0
+marigold_days_right: 0
+has_golden_watering_can: 1
+fertilizer_amount: 0
+bug_spray_amount: 0
+has_phonograph: 1
+has_gardening_glove: 1
+has_mushroom_garden: 1
+has_wheel_barrow: 1
+stinky_last_awoken: 1
+seed_slots_minus_6: 4
+has_pool_cleaner: 1
+has_roof_cleaner: 1
+garden_rake_uses: 0
+has_aquarium_garden: 1
+chocolate_amount: 0
+tree_of_wisdom_available: 1
+tree_food_amount: 0
+has_wallnut_first_aid: 1
+almanac_flag: 0
+stinky_last_chocolate: 0
+stinky_x: 323
+stinky_y: 245
+minigames_unlocked: 1
+puzzle_mode_unlocked: 1
+animate_minigame_unlock: 0
+animate_vasebreaker_unlock: 0
+animate_i_zombie_unlock: 0
+animate_survival_unlock: 0
+animate_limbo_unlock: 0
+show_adventure_complete: 0
+has_taco: 1
+stinky_asleep: 1
+# Zen Garden plants
+zen_plants:
+  - # 豌豆射手
+    plant_type: 0
+    garden_location: 0
+    column: 0
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 向日葵
+    plant_type: 1
+    garden_location: 0
+    column: 1
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 樱桃炸弹
+    plant_type: 2
+    garden_location: 0
+    column: 2
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 坚果墙
+    plant_type: 3
+    garden_location: 0
+    column: 3
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 土豆地雷
+    plant_type: 4
+    garden_location: 0
+    column: 4
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 雪花豌豆
+    plant_type: 5
+    garden_location: 0
+    column: 5
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 大嘴花
+    plant_type: 6
+    garden_location: 0
+    column: 6
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 双发豌豆
+    plant_type: 7
+    garden_location: 0
+    column: 7
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 小喷菇
+    plant_type: 8
+    garden_location: 1
+    column: 0
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 阳光菇
+    plant_type: 9
+    garden_location: 1
+    column: 1
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 大喷菇
+    plant_type: 10
+    garden_location: 1
+    column: 2
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 磁力菇
+    plant_type: 31
+    garden_location: 1
+    column: 3
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 催眠菇
+    plant_type: 12
+    garden_location: 1
+    column: 4
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 胆小菇
+    plant_type: 13
+    garden_location: 1
+    column: 5
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 寒冰菇
+    plant_type: 14
+    garden_location: 1
+    column: 6
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 末日菇
+    plant_type: 15
+    garden_location: 1
+    column: 7
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 睡莲
+    plant_type: 16
+    garden_location: 3
+    column: 0
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 窝瓜
+    plant_type: 17
+    garden_location: 0
+    column: 1
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 三线射手
+    plant_type: 18
+    garden_location: 0
+    column: 2
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 缠绕海草
+    plant_type: 19
+    garden_location: 3
+    column: 1
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 火爆辣椒
+    plant_type: 20
+    garden_location: 0
+    column: 4
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 地刺
+    plant_type: 21
+    garden_location: 0
+    column: 5
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 火炬树桩
+    plant_type: 22
+    garden_location: 0
+    column: 6
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 高坚果
+    plant_type: 23
+    garden_location: 0
+    column: 7
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 海蘑菇
+    plant_type: 24
+    garden_location: 3
+    column: 2
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 路灯花
+    plant_type: 25
+    garden_location: 0
+    column: 1
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 仙人掌
+    plant_type: 26
+    garden_location: 0
+    column: 2
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 三叶草
+    plant_type: 27
+    garden_location: 0
+    column: 3
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 分裂豆
+    plant_type: 28
+    garden_location: 0
+    column: 4
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 杨桃
+    plant_type: 29
+    garden_location: 0
+    column: 5
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 南瓜头
+    plant_type: 30
+    garden_location: 0
+    column: 6
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 墓碑苔藓
+    plant_type: 11
+    garden_location: 0
+    column: 7
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 香蒲
+    plant_type: 43
+    garden_location: 3
+    column: 3
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 忧郁菇
+    plant_type: 42
+    garden_location: 1
+    column: 8
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 卷心菜投手
+    plant_type: 32
+    garden_location: 0
+    column: 0
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 花盆
+    plant_type: 33
+    garden_location: 0
+    column: 1
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 玉米投手
+    plant_type: 34
+    garden_location: 0
+    column: 2
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 咖啡豆
+    plant_type: 35
+    garden_location: 0
+    column: 3
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 大蒜
+    plant_type: 36
+    garden_location: 0
+    column: 4
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 莴苣
+    plant_type: 37
+    garden_location: 0
+    column: 5
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 分身茄子
+    plant_type: 48
+    garden_location: 0
+    column: 6
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 西瓜投手
+    plant_type: 39
+    garden_location: 0
+    column: 7
+    row: 1
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 机枪豌豆
+    plant_type: 40
+    garden_location: 0
+    column: 0
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 双子向日葵
+    plant_type: 41
+    garden_location: 0
+    column: 3
+    row: 2
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 冰瓜投手
+    plant_type: 44
+    garden_location: 0
+    column: 0
+    row: 3
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 吸金石
+    plant_type: 45
+    garden_location: 0
+    column: 8
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 地刺王
+    plant_type: 46
+    garden_location: 3
+    column: 8
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 玉米大炮
+    plant_type: 47
+    garden_location: 2
+    column: 0
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 爆炸坚果
+    plant_type: 49
+    garden_location: 3
+    column: 4
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 巨型坚果
+    plant_type: 50
+    garden_location: 3
+    column: 5
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 芽
+    plant_type: 51
+    garden_location: 3
+    column: 6
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 反向双发射手
+    plant_type: 52
+    garden_location: 3
+    column: 7
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+# Achievements
+home_lawn_security: 1
+nobel_peas_prize: 1
+better_off_dead: 1
+china_shop: 1
+spudow: 1
+explodonator: 1
+morticulturalist: 1
+dont_pea_in_the_pool: 1
+roll_some_heads: 1
+grounded: 1
+zombologist: 1
+penny_pincher: 1
+sunny_days: 1
+popcorn_party: 1
+good_morning: 1
+no_fungus_among_us: 1
+beyond_the_grave: 1
+immortal: 1
+towering_wisdom: 1
+mustache_mode: 1
+zombatar_license_accepted: 0
+# Zombatars
+zombatars:
+dont_display_saved_jpeg_to_desktop_message: 0
