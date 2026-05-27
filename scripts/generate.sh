@@ -7,3 +7,4 @@ perl -pi -e's/require\("kaitaistruct"\)/local KaitaiStruct = require "kaitaistru
 perl -pi -e's/^([^. ]+) = /local \1 = /' lua/pvz/kaitai/*.lua
 echo 'return Users' >>lua/pvz/kaitai/users.lua
 echo 'return User' >>lua/pvz/kaitai/user.lua
+echo 'return Pak' >>lua/pvz/kaitai/pak.lua

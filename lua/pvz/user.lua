@@ -11,7 +11,7 @@ local M = {
 ---@param id integer
 ---@return table
 function M.User:from_id(id)
-    local path = fs.joinpath(kaitai.root, ('user%d.dat'):format(id))
+    local path = fs.joinpath(kaitai.user_data_dir, ('user%d.dat'):format(id))
     local user = self:from_file(path)
     user.path = path
     return user

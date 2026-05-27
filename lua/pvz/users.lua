@@ -4,7 +4,7 @@ local class = require("class").class
 local Users = require 'pvz.kaitai.users'
 local kaitai = require 'pvz.kaitai'
 local M = {
-    users_path = fs.joinpath(kaitai.root, 'users.dat'),
+    users_path = fs.joinpath(kaitai.user_data_dir, 'users.dat'),
     Users = class(Users),
     header = 'id,timestamp,name'
 }

@@ -1,0 +1,42 @@
+---
+meta:
+  id: pak
+  file-extension: pak
+  endian: le
+
+seq:
+  - id: magic
+    type: u8
+    doc: Magic number (8 bytes)
+
+  - id: files
+    type: file_entry
+    repeat: until
+    repeat-until: _.mark != 0x00
+    doc: File entries, stop when mark is not 0x00
+
+types:
+  file_entry:
+    seq:
+      - id: mark
+        type: u1
+        doc: 0x00 = has file, others = end
+
+      - id: len_name
+        type: u1
+        if: mark == 0x00
+
+      - id: name
+        type: str
+        encoding: ASCII
+        size: len_name
+        if: mark == 0x00
+
+      - id: size
+        type: u4
+        if: mark == 0x00
+
+      - id: timestamp
+        type: u8
+        if: mark == 0x00
+        doc: 8-byte timestamp, ignored

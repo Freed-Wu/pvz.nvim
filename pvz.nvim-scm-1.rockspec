@@ -40,4 +40,9 @@ end
 build = {
   type = "builtin",
   copy_directories = { 'plugin' },
+  install = {
+    bin = {
+      pvz = "bin/pvz"
+    }
+  }
 }
