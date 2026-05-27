@@ -35,7 +35,7 @@ A plants-vs-zombies user file editor based on neovim.
 
 ### Build
 
-See <scripts/generate.sh>.
+See <./scripts/generate.sh>.
 
 - [ksc](https://github.com/kaitai-io/kaitai_struct_compiler)
 - perl
