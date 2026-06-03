@@ -96,7 +96,13 @@ id,timestamp,name
 1,10,name
 ```
 
-edit username or `dd` to delete user. `:w` to save.
+edit username or `dd` to delete user.
+
+```vim
+:wq
+```
+
+Then restart game to see changes.
 
 ### user1.dat
 
@@ -104,9 +110,69 @@ edit username or `dd` to delete user. `:w` to save.
 vi pvz://id
 ```
 
+```yaml
+# Zen Garden plants
+zen_plants:
+  - # 豌豆射手
+    plant_type: 0
+    garden_location: 0
+    column: 0
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+  - # 向日葵
+    plant_type: 1
+    garden_location: 0
+    column: 1
+    row: 0
+    direction: 0
+    last_watered: 0
+    color: 0
+    times_fertilized: 3
+    times_watered: 0
+    water_needed: 0
+    happiness_state: 0
+    last_phono_bugspray: 0
+    last_fertilized: 0
+    last_chocolate: 0
+```
+
+```vim
+:wq
+```
+
+Restart game:
+
+```sh
+pvz-portable
+```
+
+![screenshot](https://github.com/user-attachments/assets/555f9efb-6ab3-4781-b94a-66d0eb685fdb)
+
 [A reference yaml](assets/yaml/user.yaml).
 
 Refer <https://plantsvszombies.fandom.com/wiki/User_file_format>.
+
+### main.pak
+
+You can extract plants-vs-zombies's resource package.
+
+```sh
+# xor decode
+$ pvz xor ~/.config/io.github.wszqkzqk/PvZPortable/main.pak
+# extract
+$ pvz unpak ~/.config/io.github.wszqkzqk/PvZPortable/main.pak.xor
+$ ls ~/.config/io.github.wszqkzqk/PvZPortable/main
+ compiled   data   images   particles   properties   reanim   sounds
+```
 
 ## Related Projects
 
