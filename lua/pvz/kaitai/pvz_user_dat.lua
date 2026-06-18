@@ -5,18 +5,30 @@
 local class = require("class")
 local KaitaiStruct = require "kaitaistruct"[1]
 
-local User = class.class(KaitaiStruct)
+-- 
+-- https://github.com/Freed-Wu/pvz.nvim provides tools to (de)serialize it.
+-- See also: Source (https://plantsvszombies.fandom.com/wiki/User_file_format)
+local PvzUserDat = class.class(KaitaiStruct)
 
-function User:_init(io, parent, root)
+function PvzUserDat:_init(io, parent, root)
   KaitaiStruct._init(self, io)
   self._parent = parent
   self._root = root or self
   self:_read()
 end
 
-function User:_read()
+function PvzUserDat:_read()
   self.version = self._io:read_u4le()
+  if not( ((self.version == 10) or (self.version == 11) or (self.version == 12)) ) then
+    error("ValidationNotAnyOfError")
+  end
   self.adventure_level = self._io:read_u4le()
+  if not(self.adventure_level >= 1) then
+    error("ValidationLessThanError")
+  end
+  if not(self.adventure_level <= 2147483647) then
+    error("ValidationGreaterThanError")
+  end
   self.money_div_10 = self._io:read_u4le()
   self.adventure_completed_times = self._io:read_u4le()
   self.survival_day_flags = self._io:read_u4le()
@@ -142,7 +154,7 @@ function User:_read()
   self.num_zen_plants = self._io:read_u4le()
   self.zen_plants = {}
   for i = 0, self.num_zen_plants - 1 do
-    self.zen_plants[i + 1] = User.ZenPlant(self._io, self, self._root)
+    self.zen_plants[i + 1] = PvzUserDat.ZenPlant(self._io, self, self._root)
   end
   self.home_lawn_security = self._io:read_u2le()
   self.nobel_peas_prize = self._io:read_u2le()
@@ -168,14 +180,13 @@ function User:_read()
   self.num_zombatars = self._io:read_u4le()
   self.zombatars = {}
   for i = 0, self.num_zombatars - 1 do
-    self.zombatars[i + 1] = User.Zombatar(self._io, self, self._root)
+    self.zombatars[i + 1] = PvzUserDat.Zombatar(self._io, self, self._root)
   end
   self.unknown_tail = self._io:read_bytes(20)
   self.dont_display_saved_jpeg_to_desktop_message = self._io:read_u1()
 end
 
 -- 
--- File format version
 -- 0x0A = beta 0.1.1.1014
 -- 0x0B = beta 0.9.9.1029
 -- 0x0C = final (1.0.0.1051 – 1.2.0.1073)
@@ -185,19 +196,17 @@ end
 -- Money divided by 10.
 -- 
 -- Number of times Adventure Mode completed.
--- 
--- Unknown, normally zero.
 
-User.ZenPlant = class.class(KaitaiStruct)
+PvzUserDat.ZenPlant = class.class(KaitaiStruct)
 
-function User.ZenPlant:_init(io, parent, root)
+function PvzUserDat.ZenPlant:_init(io, parent, root)
   KaitaiStruct._init(self, io)
   self._parent = parent
   self._root = root
   self:_read()
 end
 
-function User.ZenPlant:_read()
+function PvzUserDat.ZenPlant:_read()
   self.plant_type = self._io:read_u4le()
   self.garden_location = self._io:read_u4le()
   self.column = self._io:read_u4le()
@@ -223,16 +232,16 @@ function User.ZenPlant:_read()
 end
 
 
-User.Zombatar = class.class(KaitaiStruct)
+PvzUserDat.Zombatar = class.class(KaitaiStruct)
 
-function User.Zombatar:_init(io, parent, root)
+function PvzUserDat.Zombatar:_init(io, parent, root)
   KaitaiStruct._init(self, io)
   self._parent = parent
   self._root = root
   self:_read()
 end
 
-function User.Zombatar:_read()
+function PvzUserDat.Zombatar:_read()
   self.unknown_00 = self._io:read_u4le()
   self.skin_color = self._io:read_u4le()
   self.clothes_type = self._io:read_u4le()
@@ -254,4 +263,3 @@ function User.Zombatar:_read()
 end
 
 
-return User

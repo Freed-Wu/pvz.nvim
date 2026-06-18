@@ -6,50 +6,45 @@ local class = require("class")
 local KaitaiStruct = require "kaitaistruct"[1]
 local str_decode = require("string_decode")
 
-local Users = class.class(KaitaiStruct)
+-- 
+-- https://github.com/Freed-Wu/pvz.nvim provides tools to (de)serialize it.
+-- See also: Source (https://github.com/chiaracoetzee/plants-vs-zombies-user-file-editor/blob/595523add14b649147218bcd059eeb18fe506e92/Plants%20vs.%20Zombies%20user%20file%20editor/FormSelectUser.cs#L111-L125)
+local PvzUsersDat = class.class(KaitaiStruct)
 
-function Users:_init(io, parent, root)
+function PvzUsersDat:_init(io, parent, root)
   KaitaiStruct._init(self, io)
   self._parent = parent
   self._root = root or self
   self:_read()
 end
 
-function Users:_read()
+function PvzUsersDat:_read()
   self.version = self._io:read_u4le()
+  if not(self.version == 14) then
+    error("not equal, expected " .. 14 .. ", but got " .. self.version)
+  end
   self.num_users = self._io:read_u2le()
   self.users = {}
   for i = 0, self.num_users - 1 do
-    self.users[i + 1] = Users.UserEntry(self._io, self, self._root)
+    self.users[i + 1] = PvzUsersDat.UserEntry(self._io, self, self._root)
   end
 end
 
--- 
--- 版本号，必须为 0x0E.
--- 
--- 用户数量.
 
-Users.UserEntry = class.class(KaitaiStruct)
+PvzUsersDat.UserEntry = class.class(KaitaiStruct)
 
-function Users.UserEntry:_init(io, parent, root)
+function PvzUsersDat.UserEntry:_init(io, parent, root)
   KaitaiStruct._init(self, io)
   self._parent = parent
   self._root = root
   self:_read()
 end
 
-function Users.UserEntry:_read()
+function PvzUsersDat.UserEntry:_read()
   self.len_name = self._io:read_u2le()
   self.name = str_decode.decode(self._io:read_bytes(self.len_name), "ASCII")
   self.timestamp = self._io:read_u4le()
   self.id = self._io:read_u4le()
 end
 
--- 
--- 用户名长度.
--- 
--- 时间戳.
--- 
--- 文件编号.
 
-return Users

@@ -6,21 +6,30 @@ local class = require("class")
 local KaitaiStruct = require "kaitaistruct"[1]
 local str_decode = require("string_decode")
 
-local Pak = class.class(KaitaiStruct)
+-- 
+-- Before parse, use 0xF7 to xor decrypt.
+-- After file_entry, the following is file contents without any gap.
+-- 
+-- https://github.com/Freed-Wu/pvz.nvim provides tools to (de)serialize it.
+-- See also: Source (https://plantsvszombies.fandom.com/wiki/Modify_Plants_vs._Zombies)
+local PvzMainPak = class.class(KaitaiStruct)
 
-function Pak:_init(io, parent, root)
+function PvzMainPak:_init(io, parent, root)
   KaitaiStruct._init(self, io)
   self._parent = parent
   self._root = root or self
   self:_read()
 end
 
-function Pak:_read()
+function PvzMainPak:_read()
   self.magic = self._io:read_u8le()
+  if not(self.magic == 3133164224) then
+    error("not equal, expected " .. 3133164224 .. ", but got " .. self.magic)
+  end
   self.files = {}
   local i = 0
   while true do
-    local _ = Pak.FileEntry(self._io, self, self._root)
+    local _ = PvzMainPak.FileEntry(self._io, self, self._root)
     self.files[i + 1] = _
     if _.mark ~= 0 then
       break
@@ -29,21 +38,17 @@ function Pak:_read()
   end
 end
 
--- 
--- Magic number (8 bytes).
--- 
--- File entries, stop when mark is not 0x00.
 
-Pak.FileEntry = class.class(KaitaiStruct)
+PvzMainPak.FileEntry = class.class(KaitaiStruct)
 
-function Pak.FileEntry:_init(io, parent, root)
+function PvzMainPak.FileEntry:_init(io, parent, root)
   KaitaiStruct._init(self, io)
   self._parent = parent
   self._root = root
   self:_read()
 end
 
-function Pak.FileEntry:_read()
+function PvzMainPak.FileEntry:_read()
   self.mark = self._io:read_u1()
   if self.mark == 0 then
     self.len_name = self._io:read_u1()
@@ -59,9 +64,4 @@ function Pak.FileEntry:_read()
   end
 end
 
--- 
--- 0x00 = has file, others = end.
--- 
--- 8-byte timestamp, ignored.
 
-return Pak

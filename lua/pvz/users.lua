@@ -1,7 +1,7 @@
 ---users
 local fs = require 'vim.fs'
 local class = require("class").class
-local Users = require 'pvz.kaitai.users'
+local Users = require 'pvz.kaitai.pvz_users_dat'
 local kaitai = require 'pvz.kaitai'
 local M = {
     users_path = fs.joinpath(kaitai.user_data_dir, 'users.dat'),

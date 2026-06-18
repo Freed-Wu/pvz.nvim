@@ -43,6 +43,7 @@ build = {
   install = {
     bin = {
       pvz = "bin/pvz"
-    }
+    },
+    doc = { 'assets/yaml/user.yaml' }
   }
 }

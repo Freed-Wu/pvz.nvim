@@ -2,9 +2,9 @@
 set -e
 cd "$(dirname "$(dirname "$(readlink -f "$0")")")"
 
-ksc -- -t lua -d lua/pvz/kaitai assets/ksy/*
+ksc -- -t lua -d lua/pvz/kaitai kaitai_struct_formats/game/pvz_*.ksy
 perl -pi -e's/require\("kaitaistruct"\)/local KaitaiStruct = require "kaitaistruct"[1]/' lua/pvz/kaitai/*.lua
 perl -pi -e's/^([^. ]+) = /local \1 = /' lua/pvz/kaitai/*.lua
-echo 'return Users' >>lua/pvz/kaitai/users.lua
-echo 'return User' >>lua/pvz/kaitai/user.lua
-echo 'return Pak' >>lua/pvz/kaitai/pak.lua
+echo 'return PvzUsersDat' >>lua/pvz/kaitai/users.lua
+echo 'return PvzUserDat' >>lua/pvz/kaitai/user.lua
+echo 'return PvzMainPak' >>lua/pvz/kaitai/pak.lua

@@ -2,7 +2,7 @@
 local fs = require 'vim.fs'
 local yaml = require 'yaml'
 local class = require("class").class
-local User = require 'pvz.kaitai.user'
+local User = require 'pvz.kaitai.pvz_user_dat'
 local kaitai = require 'pvz.kaitai'
 local M = {
     User = class(User),

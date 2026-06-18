@@ -4,8 +4,9 @@ local fn = require 'vim.fn'
 local fs = require 'vim.fs'
 local uv = require 'vim.uv'
 local kaitai = require 'pvz.kaitai'
-local Pak = require 'pvz.kaitai.pak'
+local Pak = require 'pvz.kaitai.pvz_main_pak'
 local M = {
+    key = 0xF7,
     magic = 0xbac04ac0,
     depth = 16,
     pak_path = fs.joinpath(kaitai.user_config_dir, 'main.pak'),
@@ -21,7 +22,7 @@ local M = {
 function M.xor(fname, outfile, key)
     fname = fname or M.pak_path
     outfile = outfile or fname .. '.xor'
-    key = key or 0xF7
+    key = key or M.key
 
     local f = io.open(fname, 'rb')
     if f then

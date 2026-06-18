@@ -40,6 +40,11 @@ See [build script](scripts/generate.sh).
 - [ksc](https://github.com/kaitai-io/kaitai_struct_compiler)
 - perl
 
+```sh
+git clone --depth=1 --branch=pvz https://github.com/Freed-Wu/kaitai_struct_formats
+scripts/generate.sh
+```
+
 ## Install
 
 ### rocks.nvim
