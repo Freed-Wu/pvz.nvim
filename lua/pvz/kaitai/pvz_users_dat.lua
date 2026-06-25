@@ -48,3 +48,4 @@ function PvzUsersDat.UserEntry:_read()
 end
 
 
+return PvzUsersDat

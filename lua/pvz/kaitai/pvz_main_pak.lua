@@ -65,3 +65,4 @@ function PvzMainPak.FileEntry:_read()
 end
 
 
+return PvzMainPak
