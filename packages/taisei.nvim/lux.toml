@@ -1,0 +1,27 @@
+package = "taisei.nvim"
+version = "0.0.1"
+lua = ">=5.1"
+
+[description]
+summary = "A taisei progress file editor based on neovim."
+detailed = ""
+maintainer = "Wu"
+labels = ["neovim"]
+homepage = "https://github.com/Freed-Wu/pvz.nvim/tree/main/packages/taisei.nvim"
+license = 'GPL-3.0'
+
+[source]
+url = "https://github.com/Freed-Wu/pvz.nvim/archive/$(VERSION).zip"
+dir = "pvz.nvim-$(VERSION)/packages/$(PACKAGE)"
+
+[dependencies]
+"pvz.nvim" = ">= 0.0.1"
+# lua-zstd = ">= 0.0.1"
+crc32 = ">= 0.0.1"
+
+[test]
+type = "busted"
+
+[build]
+type = "builtin"
+copy_directories = ["plugin"]
