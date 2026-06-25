@@ -1,4 +1,5 @@
----utils
+---utils for Kaitai
+local M = {}
 
 ---@param number integer
 ---@param size integer

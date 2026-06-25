@@ -1,17 +1,18 @@
 ---unpak main.pak
+local user_config_dir = require 'pvz'.user_config_dir
 local bit = require 'bit'
 local fn = require 'vim.fn'
 local fs = require 'vim.fs'
 local uv = require 'vim.uv'
-local kaitai = require 'pvz.kaitai'
-local Pak = require 'pvz.kaitai.pvz_main_pak'
+local kaitai = require 'kaitai'
+local Pak = require 'kaitai.pvz_main_pak'
 local M = {
     key = 0xF7,
     magic = 0xbac04ac0,
     depth = 16,
-    pak_path = fs.joinpath(kaitai.user_config_dir, 'main.pak'),
-    pak_xor_path = fs.joinpath(kaitai.user_config_dir, 'main.pak.xor'),
-    unpak_path = fs.joinpath(kaitai.user_config_dir, 'main'),
+    pak_path = fs.joinpath(user_config_dir, 'main.pak'),
+    pak_xor_path = fs.joinpath(user_config_dir, 'main.pak.xor'),
+    unpak_path = fs.joinpath(user_config_dir, 'main'),
     usage = [[
 %s xor|ls|unpak|pak]]
 }

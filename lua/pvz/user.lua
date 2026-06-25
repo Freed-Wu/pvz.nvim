@@ -1,9 +1,10 @@
 ---user
+local user_data_dir = require 'pvz'.user_data_dir
 local fs = require 'vim.fs'
 local yaml = require 'yaml'
 local class = require("class").class
-local User = require 'pvz.kaitai.pvz_user_dat'
-local kaitai = require 'pvz.kaitai'
+local User = require 'kaitai.pvz_user_dat'
+local kaitai = require 'kaitai'
 local M = {
     User = class(User),
 }
@@ -11,7 +12,7 @@ local M = {
 ---@param id integer
 ---@return table
 function M.User:from_id(id)
-    local path = fs.joinpath(kaitai.user_data_dir, ('user%d.dat'):format(id))
+    local path = fs.joinpath(user_data_dir, ('user%d.dat'):format(id))
     local user = self:from_file(path)
     user.path = path
     return user
