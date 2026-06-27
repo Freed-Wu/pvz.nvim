@@ -13,11 +13,11 @@ function M.number_to_bits(number, size)
     return bits
 end
 
----@param f table
+---@param callback function
 ---@param number integer
 ---@param size integer
 ---@param be boolean?
-function M.write(f, number, size, be)
+function M.callback(callback, number, size, be)
     local bits = M.number_to_bits(number, size)
     for i = 1, #bits do
         if be then
@@ -25,8 +25,19 @@ function M.write(f, number, size, be)
         else
             j = i
         end
-        f:write(string.char(bits[j]))
+        local byte = string.char(bits[j])
+        callback(byte)
     end
+end
+
+---@param f table
+---@param number integer
+---@param size integer
+---@param be boolean?
+function M.write(f, number, size, be)
+    M.callback(function(byte)
+        f:write(byte)
+    end, number, size, be)
 end
 
 return M
