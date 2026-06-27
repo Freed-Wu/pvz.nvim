@@ -4,7 +4,7 @@
 local M = {}
 
 function M.create_autocmds(augroup_id)
-    augroup_id = augroup_id or vim.api.nvim_create_augroup("pvz", {})
+    augroup_id = augroup_id or vim.api.nvim_create_augroup("taisei", {})
     vim.api.nvim_create_autocmd({ "BufReadCmd", "SessionLoadPost" }, {
         pattern = "taisei://*",
         group = augroup_id,
