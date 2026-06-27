@@ -4,6 +4,7 @@
 
 local class = require("class")
 local KaitaiStruct = require "kaitaistruct"[1]
+local KaitaiStream = require "kaitaistruct"[2]
 local str_decode = require("string_decode")
 
 -- 

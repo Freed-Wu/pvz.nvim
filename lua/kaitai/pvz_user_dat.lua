@@ -4,6 +4,7 @@
 
 local class = require("class")
 local KaitaiStruct = require "kaitaistruct"[1]
+local KaitaiStream = require "kaitaistruct"[2]
 
 -- 
 -- https://github.com/Freed-Wu/pvz.nvim provides tools to (de)serialize it.
