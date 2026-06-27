@@ -154,7 +154,7 @@ function M.Progress:set_lines(lines)
         if data.unlock_stages then
             if cmd.id.label == 'unlock_stages' then
                 cmd.payload = data.unlock_stages
-            elseif cmd.id.label == 'unlock_stages' then
+            elseif cmd.id.label == 'unlock_stages_with_difficulty' then
                 cmd.payload.stage = data.unlock_stages
             end
         end
