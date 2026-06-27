@@ -186,8 +186,11 @@ function M.Progress:set_lines(lines)
                 if cmd.payload.playinfos[k] == nil then
                     cmd.payload.playinfos[k] = {}
                 end
-                cmd.payload.playinfos[k].stage = playinfo.stage or 0
-                cmd.payload.playinfos[k].difficulty = playinfo.difficulty or 0
+                if cmd.payload.playinfos[k].header == nil then
+                    cmd.payload.playinfos[k].header = {}
+                end
+                cmd.payload.playinfos[k].header.stage = playinfo.stage or 0
+                cmd.payload.playinfos[k].header.difficulty = playinfo.difficulty or 0
             end
             if cmd.id.label == 'stage_playinfo' then
                 cmd.payload.playinfos[k].num_played = playinfo.num_played or 0
