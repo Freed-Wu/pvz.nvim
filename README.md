@@ -162,7 +162,7 @@ pvz-portable
 
 ![screenshot](https://github.com/user-attachments/assets/555f9efb-6ab3-4781-b94a-66d0eb685fdb)
 
-[A reference yaml](assets/yaml/user.yaml).
+[A reference yaml](conf/user.yaml).
 
 Refer <https://plantsvszombies.fandom.com/wiki/User_file_format>.
 

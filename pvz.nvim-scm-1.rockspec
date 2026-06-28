@@ -44,6 +44,6 @@ build = {
     bin = {
       pvz = "bin/pvz"
     },
-    doc = { 'assets/yaml/user.yaml' }
+    conf = { 'conf/user.yaml' }
   }
 }
