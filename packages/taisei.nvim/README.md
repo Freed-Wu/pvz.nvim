@@ -23,3 +23,11 @@ zstd ~/.local/share/taisei/progress
 ```
 
 All BGMs and cutscenes will be unlocked.
+
+## API
+
+Refer [API](https://github.com/Freed-Wu/pvz.nvim#api)
+
+```lua
+local progress = require 'taisei.progress'.Progress:from_path()
+```

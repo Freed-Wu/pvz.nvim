@@ -179,6 +179,37 @@ $ ls ~/.config/io.github.wszqkzqk/PvZPortable/main
  compiled   data   images   particles   properties   reanim   sounds
 ```
 
+## API
+
+Even if you don't use neovim, you can still use the API to edit user files.
+
+```lua
+local user = require 'pvz.user'.User:from_id(1)
+-- or
+local users = require 'pvz.users'.Users:from_path()
+local lines = user:get_lines()
+local f = io.open('user1.yaml', 'w')
+if f then
+  f:write(table.concat(lines, '\n'))
+  f:close()
+end
+```
+
+Use your favorite editor to edit `user1.yaml`
+
+```lua
+local user = require 'pvz.user'.User:from_id(1)
+local f = io.open('user1.yaml')
+local text
+if f then
+  text = f:read"*a"
+  f:close()
+end
+local lines = text:split("\n")
+user:set_lines(lines)
+user:dump()
+```
+
 ## Related Projects
 
 - [plants-vs-zombies-user-file-editor](https://github.com/chiaracoetzee/plants-vs-zombies-user-file-editor):
