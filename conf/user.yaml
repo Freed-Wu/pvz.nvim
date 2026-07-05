@@ -128,9 +128,9 @@ has_taco: 1
 stinky_asleep: 1
 # Zen Garden plants
 zen_plants:
-  - # 豌豆射手
-    plant_type: 0
-    garden_location: 0
+  -  # Zen Garden: 0, 0
+    plant_type: 0  # 豌豆射手
+    garden_location: 0  # Zen Garden
     column: 0
     row: 0
     direction: 0
@@ -143,9 +143,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 向日葵
-    plant_type: 1
-    garden_location: 0
+  -  # Zen Garden: 1, 0
+    plant_type: 1  # 向日葵
+    garden_location: 0  # Zen Garden
     column: 1
     row: 0
     direction: 0
@@ -158,9 +158,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 樱桃炸弹
-    plant_type: 2
-    garden_location: 0
+  -  # Zen Garden: 2, 0
+    plant_type: 2  # 樱桃炸弹
+    garden_location: 0  # Zen Garden
     column: 2
     row: 0
     direction: 0
@@ -173,9 +173,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 坚果墙
-    plant_type: 3
-    garden_location: 0
+  -  # Zen Garden: 3, 0
+    plant_type: 3  # 坚果墙
+    garden_location: 0  # Zen Garden
     column: 3
     row: 0
     direction: 0
@@ -188,9 +188,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 土豆地雷
-    plant_type: 4
-    garden_location: 0
+  -  # Zen Garden: 4, 0
+    plant_type: 4  # 土豆地雷
+    garden_location: 0  # Zen Garden
     column: 4
     row: 0
     direction: 0
@@ -203,9 +203,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 雪花豌豆
-    plant_type: 5
-    garden_location: 0
+  -  # Zen Garden: 5, 0
+    plant_type: 5  # 雪花豌豆
+    garden_location: 0  # Zen Garden
     column: 5
     row: 0
     direction: 0
@@ -218,9 +218,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 大嘴花
-    plant_type: 6
-    garden_location: 0
+  -  # Zen Garden: 6, 0
+    plant_type: 6  # 大嘴花
+    garden_location: 0  # Zen Garden
     column: 6
     row: 0
     direction: 0
@@ -233,9 +233,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 双发豌豆
-    plant_type: 7
-    garden_location: 0
+  -  # Zen Garden: 7, 0
+    plant_type: 7  # 双发豌豆
+    garden_location: 0  # Zen Garden
     column: 7
     row: 0
     direction: 0
@@ -248,9 +248,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 小喷菇
-    plant_type: 8
-    garden_location: 1
+  -  # Mushroom Garden: 0, 0
+    plant_type: 8  # 小喷菇
+    garden_location: 1  # Mushroom Garden
     column: 0
     row: 0
     direction: 0
@@ -263,9 +263,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 阳光菇
-    plant_type: 9
-    garden_location: 1
+  -  # Mushroom Garden: 1, 0
+    plant_type: 9  # 阳光菇
+    garden_location: 1  # Mushroom Garden
     column: 1
     row: 0
     direction: 0
@@ -278,9 +278,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 大喷菇
-    plant_type: 10
-    garden_location: 1
+  -  # Mushroom Garden: 2, 0
+    plant_type: 10  # 大喷菇
+    garden_location: 1  # Mushroom Garden
     column: 2
     row: 0
     direction: 0
@@ -293,9 +293,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 磁力菇
-    plant_type: 31
-    garden_location: 1
+  -  # Mushroom Garden: 3, 0
+    plant_type: 31  # 磁力菇
+    garden_location: 1  # Mushroom Garden
     column: 3
     row: 0
     direction: 0
@@ -308,9 +308,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 催眠菇
-    plant_type: 12
-    garden_location: 1
+  -  # Mushroom Garden: 4, 0
+    plant_type: 12  # 催眠菇
+    garden_location: 1  # Mushroom Garden
     column: 4
     row: 0
     direction: 0
@@ -323,9 +323,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 胆小菇
-    plant_type: 13
-    garden_location: 1
+  -  # Mushroom Garden: 5, 0
+    plant_type: 13  # 胆小菇
+    garden_location: 1  # Mushroom Garden
     column: 5
     row: 0
     direction: 0
@@ -338,9 +338,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 寒冰菇
-    plant_type: 14
-    garden_location: 1
+  -  # Mushroom Garden: 6, 0
+    plant_type: 14  # 寒冰菇
+    garden_location: 1  # Mushroom Garden
     column: 6
     row: 0
     direction: 0
@@ -353,9 +353,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 末日菇
-    plant_type: 15
-    garden_location: 1
+  -  # Mushroom Garden: 7, 0
+    plant_type: 15  # 末日菇
+    garden_location: 1  # Mushroom Garden
     column: 7
     row: 0
     direction: 0
@@ -368,9 +368,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 睡莲
-    plant_type: 16
-    garden_location: 3
+  -  # Aquarium Garden: 0, 0
+    plant_type: 16  # 睡莲
+    garden_location: 3  # Aquarium Garden
     column: 0
     row: 0
     direction: 0
@@ -383,9 +383,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 窝瓜
-    plant_type: 17
-    garden_location: 0
+  -  # Zen Garden: 1, 2
+    plant_type: 17  # 窝瓜
+    garden_location: 0  # Zen Garden
     column: 1
     row: 2
     direction: 0
@@ -398,9 +398,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 三线射手
-    plant_type: 18
-    garden_location: 0
+  -  # Zen Garden: 2, 2
+    plant_type: 18  # 三线射手
+    garden_location: 0  # Zen Garden
     column: 2
     row: 2
     direction: 0
@@ -413,9 +413,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 缠绕海草
-    plant_type: 19
-    garden_location: 3
+  -  # Aquarium Garden: 1, 0
+    plant_type: 19  # 缠绕海草
+    garden_location: 3  # Aquarium Garden
     column: 1
     row: 0
     direction: 0
@@ -428,9 +428,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 火爆辣椒
-    plant_type: 20
-    garden_location: 0
+  -  # Zen Garden: 4, 2
+    plant_type: 20  # 火爆辣椒
+    garden_location: 0  # Zen Garden
     column: 4
     row: 2
     direction: 0
@@ -443,9 +443,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 地刺
-    plant_type: 21
-    garden_location: 0
+  -  # Zen Garden: 5, 2
+    plant_type: 21  # 地刺
+    garden_location: 0  # Zen Garden
     column: 5
     row: 2
     direction: 0
@@ -458,9 +458,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 火炬树桩
-    plant_type: 22
-    garden_location: 0
+  -  # Zen Garden: 6, 2
+    plant_type: 22  # 火炬树桩
+    garden_location: 0  # Zen Garden
     column: 6
     row: 2
     direction: 0
@@ -473,9 +473,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 高坚果
-    plant_type: 23
-    garden_location: 0
+  -  # Zen Garden: 7, 2
+    plant_type: 23  # 高坚果
+    garden_location: 0  # Zen Garden
     column: 7
     row: 2
     direction: 0
@@ -488,9 +488,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 海蘑菇
-    plant_type: 24
-    garden_location: 3
+  -  # Aquarium Garden: 2, 0
+    plant_type: 24  # 海蘑菇
+    garden_location: 3  # Aquarium Garden
     column: 2
     row: 0
     direction: 0
@@ -503,9 +503,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 路灯花
-    plant_type: 25
-    garden_location: 0
+  -  # Zen Garden: 1, 3
+    plant_type: 25  # 路灯花
+    garden_location: 0  # Zen Garden
     column: 1
     row: 3
     direction: 0
@@ -518,9 +518,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 仙人掌
-    plant_type: 26
-    garden_location: 0
+  -  # Zen Garden: 2, 3
+    plant_type: 26  # 仙人掌
+    garden_location: 0  # Zen Garden
     column: 2
     row: 3
     direction: 0
@@ -533,9 +533,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 三叶草
-    plant_type: 27
-    garden_location: 0
+  -  # Zen Garden: 3, 3
+    plant_type: 27  # 三叶草
+    garden_location: 0  # Zen Garden
     column: 3
     row: 3
     direction: 0
@@ -548,9 +548,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 分裂豆
-    plant_type: 28
-    garden_location: 0
+  -  # Zen Garden: 4, 3
+    plant_type: 28  # 分裂豆
+    garden_location: 0  # Zen Garden
     column: 4
     row: 3
     direction: 0
@@ -563,9 +563,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 杨桃
-    plant_type: 29
-    garden_location: 0
+  -  # Zen Garden: 5, 3
+    plant_type: 29  # 杨桃
+    garden_location: 0  # Zen Garden
     column: 5
     row: 3
     direction: 0
@@ -578,9 +578,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 南瓜头
-    plant_type: 30
-    garden_location: 0
+  -  # Zen Garden: 6, 3
+    plant_type: 30  # 南瓜头
+    garden_location: 0  # Zen Garden
     column: 6
     row: 3
     direction: 0
@@ -593,9 +593,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 墓碑苔藓
-    plant_type: 11
-    garden_location: 0
+  -  # Zen Garden: 7, 3
+    plant_type: 11  # 墓碑苔藓
+    garden_location: 0  # Zen Garden
     column: 7
     row: 3
     direction: 0
@@ -608,9 +608,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 香蒲
-    plant_type: 43
-    garden_location: 3
+  -  # Aquarium Garden: 3, 0
+    plant_type: 43  # 香蒲
+    garden_location: 3  # Aquarium Garden
     column: 3
     row: 0
     direction: 0
@@ -623,9 +623,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 忧郁菇
-    plant_type: 42
-    garden_location: 1
+  -  # Mushroom Garden: 8, 0
+    plant_type: 42  # 忧郁菇
+    garden_location: 1  # Mushroom Garden
     column: 8
     row: 0
     direction: 0
@@ -638,9 +638,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 卷心菜投手
-    plant_type: 32
-    garden_location: 0
+  -  # Zen Garden: 0, 1
+    plant_type: 32  # 卷心菜投手
+    garden_location: 0  # Zen Garden
     column: 0
     row: 1
     direction: 0
@@ -653,9 +653,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 花盆
-    plant_type: 33
-    garden_location: 0
+  -  # Zen Garden: 1, 1
+    plant_type: 33  # 花盆
+    garden_location: 0  # Zen Garden
     column: 1
     row: 1
     direction: 0
@@ -668,9 +668,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 玉米投手
-    plant_type: 34
-    garden_location: 0
+  -  # Zen Garden: 2, 1
+    plant_type: 34  # 玉米投手
+    garden_location: 0  # Zen Garden
     column: 2
     row: 1
     direction: 0
@@ -683,9 +683,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 咖啡豆
-    plant_type: 35
-    garden_location: 0
+  -  # Zen Garden: 3, 1
+    plant_type: 35  # 咖啡豆
+    garden_location: 0  # Zen Garden
     column: 3
     row: 1
     direction: 0
@@ -698,9 +698,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 大蒜
-    plant_type: 36
-    garden_location: 0
+  -  # Zen Garden: 4, 1
+    plant_type: 36  # 大蒜
+    garden_location: 0  # Zen Garden
     column: 4
     row: 1
     direction: 0
@@ -713,9 +713,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 莴苣
-    plant_type: 37
-    garden_location: 0
+  -  # Zen Garden: 5, 1
+    plant_type: 37  # 莴苣
+    garden_location: 0  # Zen Garden
     column: 5
     row: 1
     direction: 0
@@ -728,9 +728,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 分身茄子
-    plant_type: 48
-    garden_location: 0
+  -  # Zen Garden: 6, 1
+    plant_type: 48  # 分身茄子
+    garden_location: 0  # Zen Garden
     column: 6
     row: 1
     direction: 0
@@ -743,9 +743,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 西瓜投手
-    plant_type: 39
-    garden_location: 0
+  -  # Zen Garden: 7, 1
+    plant_type: 39  # 西瓜投手
+    garden_location: 0  # Zen Garden
     column: 7
     row: 1
     direction: 0
@@ -758,9 +758,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 机枪豌豆
-    plant_type: 40
-    garden_location: 0
+  -  # Zen Garden: 0, 2
+    plant_type: 40  # 机枪豌豆
+    garden_location: 0  # Zen Garden
     column: 0
     row: 2
     direction: 0
@@ -773,9 +773,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 双子向日葵
-    plant_type: 41
-    garden_location: 0
+  -  # Zen Garden: 3, 2
+    plant_type: 41  # 双子向日葵
+    garden_location: 0  # Zen Garden
     column: 3
     row: 2
     direction: 0
@@ -788,9 +788,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 冰瓜投手
-    plant_type: 44
-    garden_location: 0
+  -  # Zen Garden: 0, 3
+    plant_type: 44  # 冰瓜投手
+    garden_location: 0  # Zen Garden
     column: 0
     row: 3
     direction: 0
@@ -803,9 +803,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 吸金石
-    plant_type: 45
-    garden_location: 0
+  -  # Zen Garden: 8, 0
+    plant_type: 45  # 吸金石
+    garden_location: 0  # Zen Garden
     column: 8
     row: 0
     direction: 0
@@ -818,9 +818,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 地刺王
-    plant_type: 46
-    garden_location: 3
+  -  # Aquarium Garden: 8, 0
+    plant_type: 46  # 地刺王
+    garden_location: 3  # Aquarium Garden
     column: 8
     row: 0
     direction: 0
@@ -833,9 +833,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 玉米大炮
-    plant_type: 47
-    garden_location: 2
+  -  # Wheel Barrow: 0, 0
+    plant_type: 47  # 玉米大炮
+    garden_location: 2  # Wheel Barrow
     column: 0
     row: 0
     direction: 0
@@ -848,9 +848,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 爆炸坚果
-    plant_type: 49
-    garden_location: 3
+  -  # Aquarium Garden: 4, 0
+    plant_type: 49  # 爆炸坚果
+    garden_location: 3  # Aquarium Garden
     column: 4
     row: 0
     direction: 0
@@ -863,9 +863,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 巨型坚果
-    plant_type: 50
-    garden_location: 3
+  -  # Aquarium Garden: 5, 0
+    plant_type: 50  # 巨型坚果
+    garden_location: 3  # Aquarium Garden
     column: 5
     row: 0
     direction: 0
@@ -878,9 +878,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 芽
-    plant_type: 51
-    garden_location: 3
+  -  # Aquarium Garden: 6, 0
+    plant_type: 51  # 芽
+    garden_location: 3  # Aquarium Garden
     column: 6
     row: 0
     direction: 0
@@ -893,9 +893,9 @@ zen_plants:
     last_phono_bugspray: 0
     last_fertilized: 0
     last_chocolate: 0
-  - # 反向双发射手
-    plant_type: 52
-    garden_location: 3
+  -  # Aquarium Garden: 7, 0
+    plant_type: 52  # 反向双发射手
+    garden_location: 3  # Aquarium Garden
     column: 7
     row: 0
     direction: 0

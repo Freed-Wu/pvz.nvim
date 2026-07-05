@@ -7,6 +7,65 @@ local User = require 'kaitai.pvz_user_dat'
 local kaitai = require 'kaitai'
 local M = {
     User = class(User),
+    garden_location = { [0] = "Zen Garden", "Mushroom Garden", "Wheel Barrow", "Aquarium Garden" },
+    color = { "Low saturation", "Default", "Magenta", "Orange", "Pink", "Cyan", "Red", "Blue", "Purple", "Light purple", "Yellow", "Light green" },
+    direction = { [0] = "Faces right", "Faces left" },
+    happiness_state = { [0] = "none", [3] = "Bug Spray", [4] = "Phonograph" },
+    plant_type = {
+        [0] = "豌豆射手",
+        "向日葵",
+        "樱桃炸弹",
+        "坚果墙",
+        "土豆地雷",
+        "雪花豌豆",
+        "大嘴花",
+        "双发豌豆",
+        "小喷菇",
+        "阳光菇",
+        "大喷菇",
+        "墓碑苔藓",
+        "催眠菇",
+        "胆小菇",
+        "寒冰菇",
+        "末日菇",
+        "睡莲",
+        "窝瓜",
+        "三线射手",
+        "缠绕海草",
+        "火爆辣椒",
+        "地刺",
+        "火炬树桩",
+        "高坚果",
+        "海蘑菇",
+        "路灯花",
+        "仙人掌",
+        "三叶草",
+        "分裂豆",
+        "杨桃",
+        "南瓜头",
+        "磁力菇",
+        "卷心菜投手",
+        "花盆",
+        "玉米投手",
+        "咖啡豆",
+        "大蒜",
+        "莴苣",
+        "金盏花",
+        "西瓜投手",
+        "机枪豌豆",
+        "双子向日葵",
+        "忧郁菇",
+        "香蒲",
+        "冰瓜投手",
+        "吸金石",
+        "地刺王",
+        "玉米大炮",
+        "分身茄子",
+        "爆炸坚果",
+        "巨型坚果",
+        "芽",
+        "反向双发射手"
+    },
 }
 
 ---@param id integer
@@ -67,9 +126,31 @@ function M.User:get_lines()
     end
     table.insert(lines, "# Zen Garden plants")
     table.insert(lines, "zen_plants:")
-    for i, zen_plant in ipairs(self.zen_plants) do
-        table.insert(lines, ("  - # %d"):format(i))
-        for _, name in ipairs { "plant_type", "garden_location", "column", "row", "direction", "last_watered", "color", "times_fertilized", "times_watered", "water_needed", "happiness_state", "last_phono_bugspray", "last_fertilized", "last_chocolate" } do
+    for _, zen_plant in ipairs(self.zen_plants) do
+        table.insert(lines,
+            ("  -  # %s: %d, %d"):format(M.garden_location[zen_plant.garden_location] or "unknown", zen_plant.column,
+                zen_plant.row))
+        table.insert(lines,
+            ("    %s: %d  # %s"):format("plant_type", zen_plant.plant_type, M.plant_type[zen_plant.plant_type] or "unknown"))
+        table.insert(lines,
+            ("    %s: %d  # %s"):format("garden_location", zen_plant.garden_location,
+                M.garden_location[zen_plant.garden_location] or "unknown"))
+        for _, name in ipairs { "column", "row" } do
+            table.insert(lines, ("    %s: %d"):format(name, zen_plant[name]))
+        end
+        table.insert(lines,
+            ("    %s: %d  # %s"):format("direction", zen_plant.direction, M.direction[zen_plant.direction] or "unknown"))
+        for _, name in ipairs { "last_watered" } do
+            table.insert(lines, ("    %s: %d"):format(name, zen_plant[name]))
+        end
+        table.insert(lines, ("    %s: %d  # %s"):format("color", zen_plant.color, M.color[zen_plant.color] or M.color[2]))
+        for _, name in ipairs { "times_fertilized", "times_watered", "water_needed" } do
+            table.insert(lines, ("    %s: %d"):format(name, zen_plant[name]))
+        end
+        table.insert(lines,
+            ("    %s: %d  # %s"):format("happiness_state", zen_plant.happiness_state,
+                M.happiness_state[zen_plant.happiness_state] or "unknown"))
+        for _, name in ipairs { "last_phono_bugspray", "last_fertilized", "last_chocolate" } do
             table.insert(lines, ("    %s: %d"):format(name, zen_plant[name]))
         end
     end
